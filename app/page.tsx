@@ -1,3 +1,4 @@
+import { IpcFoodInsecurityMap } from "@/components/IpcFoodInsecurityMap";
 import Link from "next/link";
 import { FALLBACK_PRICE_INDICES, FALLBACK_MARKET_PRICES, FALLBACK_FORECASTS, FALLBACK_FOOD_SECURITY } from "@/lib/fallback-data";
 import { TrendingUp, Wheat, AlertCircle, ExternalLink, Calendar, Layers } from "lucide-react";
@@ -20,6 +21,8 @@ export default function HarvestBoardPage() {
           </p>
         </div>
       </div>
+
+      <IpcFoodInsecurityMap />
 
       {/* ==================== BAND 1: PRICES ==================== */}
       <section className="bg-white border-2 border-slate-200 rounded-lg p-6 space-y-4 shadow-sm">
